@@ -1,0 +1,193 @@
+<div class="page-body">
+
+    <div class="row">
+
+        <!-- data visualization  -->
+        <div class="col-xl-3 col-md-6">
+            <div class="card">
+                <div class="card-block">
+                    <div class="row align-items-center">
+                        <div class="col-8">
+                            <h4 class="text-c-purple">30,200</h4>
+                            <h6 class="text-muted m-b-0">Trained Models</h6>
+                        </div>
+                        <div class="col-4 text-right">
+                            <i class="fa fa-bar-chart f-28"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-c-purple">
+                    <div class="row align-items-center">
+                        <div class="col-9">
+                            <p class="text-white m-b-0">40% Daily change</p>
+                        </div>
+                        <div class="col-3 text-right">
+                            <i class="fa fa-line-chart text-white f-16"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card">
+                <div class="card-block">
+                    <div class="row align-items-center">
+                        <div class="col-8">
+                            <h4 class="text-c-green">290+</h4>
+                            <h6 class="text-muted m-b-0">Untrained Models</h6>
+                        </div>
+                        <div class="col-4 text-right">
+                            <i class="fa fa-file-text-o f-28"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-c-green">
+                    <div class="row align-items-center">
+                        <div class="col-9">
+                            <p class="text-white m-b-0">25% Daily change</p>
+                        </div>
+                        <div class="col-3 text-right">
+                            <i class="fa fa-line-chart text-white f-16"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card">
+                <div class="card-block">
+                    <div class="row align-items-center">
+                        <div class="col-8">
+                            <h4 class="text-c-red">145</h4>
+                            <h6 class="text-muted m-b-0">Feature Engineering </h6>
+                        </div>
+                        <div class="col-4 text-right">
+                            <i class="fa fa-calendar-check-o f-28"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-c-red">
+                    <div class="row align-items-center">
+                        <div class="col-9">
+                            <p class="text-white m-b-0">20% Daily change</p>
+                        </div>
+                        <div class="col-3 text-right">
+                            <i class="fa fa-line-chart text-white f-16"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card">
+                <div class="card-block">
+                    <div class="row align-items-center">
+                        <div class="col-8">
+                            <h4 class="text-c-blue">500</h4>
+                            <h6 class="text-muted m-b-0">Numerical Predictors</h6>
+                        </div>
+                        <div class="col-4 text-right">
+                            <i class="fa fa-hand-o-down f-28"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-c-blue">
+                    <div class="row align-items-center">
+                        <div class="col-9">
+                            <p class="text-white m-b-0">10% Daily change</p>
+                        </div>
+                        <div class="col-3 text-right">
+                            <i class="fa fa-line-chart text-white f-16"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--data visualization  end -->
+
+        <!--  data visualizaton start -->
+        <div class="col-xl-8 col-md-12">
+            <app-card [title]="'Trained Models'">
+                <div id="sales-analytics" [style.height]="'335px'"></div>
+            </app-card>
+        </div>
+
+
+        <div class="col-xl-4 col-md-12">
+            <app-card [title]="'Training Models Forecast'">
+                <div class="row justify-content-end align-items-center">
+                    <div class="col-md-6">
+                        <h6 id="opened" class="text-c-blue">520 Open</h6>
+                        <h6 id="unopened" class="text-c-red">70 Unopened</h6>
+                        <p class="text-muted m-b-5">15% monthly cost decrease</p>
+                        <h6>(160-180 models t)</h6>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="sales-prediction-chart" [style.height]="'100px'"></div>
+                    </div>
+                </div>
+            </app-card>
+            <app-card [title]="'Trained Models Processing'">
+                <div class="row justify-content-end align-items-center">
+                    <div class="col-md-6">
+                        <h6 id="opened" class="text-c-blue">520 Open</h6>
+                        <h6 id="unopened" class="text-c-red">70 Unopened</h6>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="emails-sent-sales-chart" [style.height]="'100px'"></div>
+                    </div>
+                </div>
+            </app-card>
+        </div>
+        <!-- sale analytics & real time end -->
+
+
+        <!-- seo start -->
+        <div class="col-xl-8 col-md-12">
+            <app-card [title]="'Trained Model Geographic Application'">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div id="allocation-map" [style.height]="'265px'"></div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div id="allocation-chart" [style.height]="'265px'"></div>
+                    </div>
+                </div>
+            </app-card>
+        </div>
+        <div class="col-xl-4 col-md-12">
+            <div class="card">
+                <div class="card-block">
+                    <div class="row align-items-center">
+                        <div class="col-5">
+                            <h3>$16,756</h3>
+                            <h6 class="text-muted m-b-0">Cost Per Trained Dataset<i
+                                    class="fa fa-caret-down text-c-red m-l-10"></i></h6>
+                        </div>
+                        <div class="col-7">
+                            <chart id="seo-chart1" [type]="'line'" [data]="seo1Data" [options]="seoOption"></chart>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-block">
+                    <div class="row align-items-center">
+                        <div class="col-5">
+                            <h3>5.54%</h3>
+                            <h6 class="text-muted m-b-0">Marging Error <i class="fa fa-caret-up text-c-green m-l-10"></i>
+                            </h6>
+                        </div>
+                        <div class="col-7">
+                            <chart id="seo-chart2" [type]="'bar'" [data]="seo2Data" [options]="seoOption"></chart>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- seo end -->
+
+
+    </div>
+</div>
