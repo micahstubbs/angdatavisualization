@@ -112,9 +112,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var AppComponent = /** @class */ (function () {
+    //API_URL = 'http://localhost/projects/rainmakerforce_new/rainmakerforce/wp-content/plugins';
+    //BASE_URL = 'http://localhost/projects/rainmakerforce_new/rainmakerforce';
     function AppComponent(router) {
         this.router = router;
         this.title = 'dotData';
+        this.API_URL = 'https://dev.rainmakerforce.com/wp-content/plugins';
+        this.BASE_URL = 'https://dev.rainmakerforce.com';
     }
     AppComponent.prototype.ngOnInit = function () {
         this.router.events.subscribe(function (evt) {
@@ -179,7 +183,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_5__layout_auth_auth_component__["a" /* AuthComponent */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["BrowserModule"],
                 __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
                 __WEBPACK_IMPORTED_MODULE_2__app_routing_module__["a" /* AppRoutingModule */],
                 __WEBPACK_IMPORTED_MODULE_7__shared_shared_module__["a" /* SharedModule */]
@@ -524,61 +528,61 @@ var AdminComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/layout/admin/admin.component.html"),
             styles: [__webpack_require__("./src/app/layout/admin/admin.component.scss")],
             animations: [
-                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["j" /* trigger */])('notificationBottom', [
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["g" /* state */])('an-off, void', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["h" /* style */])({
+                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["trigger"])('notificationBottom', [
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["state"])('an-off, void', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["style"])({
                         overflow: 'hidden',
                         height: '0px',
                     })),
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["g" /* state */])('an-animate', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["h" /* style */])({
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["state"])('an-animate', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["style"])({
                         overflow: 'hidden',
-                        height: __WEBPACK_IMPORTED_MODULE_1__angular_animations__["a" /* AUTO_STYLE */],
+                        height: __WEBPACK_IMPORTED_MODULE_1__angular_animations__["AUTO_STYLE"],
                     })),
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["i" /* transition */])('an-off <=> an-animate', [
-                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["e" /* animate */])('400ms ease-in-out')
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["transition"])('an-off <=> an-animate', [
+                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["animate"])('400ms ease-in-out')
                     ])
                 ]),
-                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["j" /* trigger */])('slideInOut', [
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["g" /* state */])('in', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["h" /* style */])({
+                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["trigger"])('slideInOut', [
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["state"])('in', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["style"])({
                         width: '300px',
                     })),
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["g" /* state */])('out', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["h" /* style */])({
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["state"])('out', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["style"])({
                         width: '0',
                     })),
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["i" /* transition */])('in => out', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["e" /* animate */])('400ms ease-in-out')),
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["i" /* transition */])('out => in', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["e" /* animate */])('400ms ease-in-out'))
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["transition"])('in => out', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["animate"])('400ms ease-in-out')),
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["transition"])('out => in', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["animate"])('400ms ease-in-out'))
                 ]),
-                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["j" /* trigger */])('mobileHeaderNavRight', [
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["g" /* state */])('nav-off, void', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["h" /* style */])({
+                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["trigger"])('mobileHeaderNavRight', [
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["state"])('nav-off, void', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["style"])({
                         overflow: 'hidden',
                         height: '0px',
                     })),
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["g" /* state */])('nav-on', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["h" /* style */])({
-                        height: __WEBPACK_IMPORTED_MODULE_1__angular_animations__["a" /* AUTO_STYLE */],
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["state"])('nav-on', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["style"])({
+                        height: __WEBPACK_IMPORTED_MODULE_1__angular_animations__["AUTO_STYLE"],
                     })),
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["i" /* transition */])('nav-off <=> nav-on', [
-                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["e" /* animate */])('400ms ease-in-out')
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["transition"])('nav-off <=> nav-on', [
+                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["animate"])('400ms ease-in-out')
                     ])
                 ]),
-                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["j" /* trigger */])('fadeInOutTranslate', [
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["i" /* transition */])(':enter', [
-                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["h" /* style */])({ opacity: 0 }),
-                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["e" /* animate */])('400ms ease-in-out', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["h" /* style */])({ opacity: 1 }))
+                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["trigger"])('fadeInOutTranslate', [
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["transition"])(':enter', [
+                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["style"])({ opacity: 0 }),
+                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["animate"])('400ms ease-in-out', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["style"])({ opacity: 1 }))
                     ]),
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["i" /* transition */])(':leave', [
-                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["h" /* style */])({ transform: 'translate(0)' }),
-                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["e" /* animate */])('400ms ease-in-out', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["h" /* style */])({ opacity: 0 }))
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["transition"])(':leave', [
+                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["style"])({ transform: 'translate(0)' }),
+                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["animate"])('400ms ease-in-out', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["style"])({ opacity: 0 }))
                     ])
                 ]),
-                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["j" /* trigger */])('mobileMenuTop', [
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["g" /* state */])('no-block, void', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["h" /* style */])({
+                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["trigger"])('mobileMenuTop', [
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["state"])('no-block, void', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["style"])({
                         overflow: 'hidden',
                         height: '0px',
                     })),
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["g" /* state */])('yes-block', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["h" /* style */])({
-                        height: __WEBPACK_IMPORTED_MODULE_1__angular_animations__["a" /* AUTO_STYLE */],
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["state"])('yes-block', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["style"])({
+                        height: __WEBPACK_IMPORTED_MODULE_1__angular_animations__["AUTO_STYLE"],
                     })),
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["i" /* transition */])('no-block <=> yes-block', [
-                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["e" /* animate */])('400ms ease-in-out')
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["transition"])('no-block <=> yes-block', [
+                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["animate"])('400ms ease-in-out')
                     ])
                 ])
             ]
@@ -643,7 +647,7 @@ var TitleComponent = /** @class */ (function () {
             selector: 'app-title',
             template: '<span></span>'
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_router__["f" /* Router */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* Title */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_router__["f" /* Router */], __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* ActivatedRoute */], __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["Title"]])
     ], TitleComponent);
     return TitleComponent;
 }());
@@ -915,40 +919,40 @@ var AccordionLinkDirective = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return cardIconToggle; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_animations__ = __webpack_require__("./node_modules/@angular/animations/esm5/animations.js");
 
-var cardToggle = Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["j" /* trigger */])('cardToggle', [
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["g" /* state */])('collapsed, void', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["h" /* style */])({
+var cardToggle = Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('cardToggle', [
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('collapsed, void', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
         overflow: 'hidden',
         height: '0px',
     })),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["g" /* state */])('expanded', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["h" /* style */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('expanded', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
         overflow: 'hidden',
-        height: __WEBPACK_IMPORTED_MODULE_0__angular_animations__["a" /* AUTO_STYLE */],
+        height: __WEBPACK_IMPORTED_MODULE_0__angular_animations__["AUTO_STYLE"],
     })),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["i" /* transition */])('collapsed <=> expanded', [
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["e" /* animate */])('400ms ease-in-out')
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('collapsed <=> expanded', [
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('400ms ease-in-out')
     ])
 ]);
-var cardClose = Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["j" /* trigger */])('cardClose', [
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["g" /* state */])('open', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["h" /* style */])({
+var cardClose = Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('cardClose', [
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('open', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
         opacity: 1
     })),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["g" /* state */])('closed', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["h" /* style */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('closed', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
         opacity: 0,
         display: 'none'
     })),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["i" /* transition */])('open <=> closed', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["e" /* animate */])('400ms')),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('open <=> closed', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('400ms')),
 ]);
-var cardIconToggle = Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["j" /* trigger */])('cardIconToggle', [
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["g" /* state */])('an-off, void', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["h" /* style */])({
+var cardIconToggle = Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["trigger"])('cardIconToggle', [
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('an-off, void', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
         overflow: 'hidden',
         width: '35px',
     })),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["g" /* state */])('an-animate', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["h" /* style */])({
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["state"])('an-animate', Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["style"])({
         overflow: 'hidden',
-        width: __WEBPACK_IMPORTED_MODULE_0__angular_animations__["a" /* AUTO_STYLE */],
+        width: __WEBPACK_IMPORTED_MODULE_0__angular_animations__["AUTO_STYLE"],
     })),
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["i" /* transition */])('an-off <=> an-animate', [
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["e" /* animate */])('400ms ease-in-out')
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["transition"])('an-off <=> an-animate', [
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_animations__["animate"])('400ms ease-in-out')
     ])
 ]);
 
@@ -1413,7 +1417,7 @@ var SharedModule = /** @class */ (function () {
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"],
                 __WEBPACK_IMPORTED_MODULE_2__ng_bootstrap_ng_bootstrap__["a" /* NgbModule */].forRoot(),
-                __WEBPACK_IMPORTED_MODULE_7__angular_common_http__["a" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_7__angular_common_http__["HttpClientModule"],
                 __WEBPACK_IMPORTED_MODULE_8_ngx_perfect_scrollbar__["b" /* PerfectScrollbarModule */],
                 __WEBPACK_IMPORTED_MODULE_15_ng_click_outside__["ClickOutsideModule"]
             ],
@@ -1424,7 +1428,7 @@ var SharedModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_5__accordion_accordionlink_directive__["a" /* AccordionLinkDirective */],
                 __WEBPACK_IMPORTED_MODULE_6__accordion_accordion_directive__["a" /* AccordionDirective */],
                 __WEBPACK_IMPORTED_MODULE_11__card_card_toggle_directive__["a" /* CardToggleDirective */],
-                __WEBPACK_IMPORTED_MODULE_7__angular_common_http__["a" /* HttpClientModule */],
+                __WEBPACK_IMPORTED_MODULE_7__angular_common_http__["HttpClientModule"],
                 __WEBPACK_IMPORTED_MODULE_8_ngx_perfect_scrollbar__["b" /* PerfectScrollbarModule */],
                 __WEBPACK_IMPORTED_MODULE_9__layout_admin_title_title_component__["a" /* TitleComponent */],
                 __WEBPACK_IMPORTED_MODULE_10__card_card_component__["a" /* CardComponent */],
