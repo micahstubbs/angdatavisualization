@@ -8,7 +8,11 @@ import {NavigationEnd, Router} from '@angular/router';
 })
 export class AppComponent implements OnInit {
   title = 'dotData';
+    API_URL = 'https://dev.rainmakerforce.com/wp-content/plugins';
+    BASE_URL = 'https://dev.rainmakerforce.com';
 
+    //API_URL = 'http://localhost/projects/rainmakerforce_new/rainmakerforce/wp-content/plugins';
+    //BASE_URL = 'http://localhost/projects/rainmakerforce_new/rainmakerforce';
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -20,3 +24,5 @@ export class AppComponent implements OnInit {
     });
   }
 }
+
+

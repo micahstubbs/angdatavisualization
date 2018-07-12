@@ -1,0 +1,119 @@
+#seo-card1 canvas,
+#seo-card2 canvas {
+  height: 150px !important;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  @media only screen and (max-width: 768px) {
+    padding-bottom: 30px;
+  }
+}
+
+.notification_view {
+  background-color: #00aaee;
+  color: #fff;
+  padding: 12px 10px;
+  border: 1px solid #0B486B;
+  border-radius: 6px;
+}
+
+hr.message-inner-separator {
+  clear: both;
+  margin-top: 10px;
+  margin-bottom: 13px;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+}
+
+.notification_display {
+  background-color: #ffffff;
+  box-shadow: 0 8px 6px -6px #b9b9b9;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.notification-user img {
+  position: relative;
+  top: 11px;
+}
+
+.close:hover, .close:focus {
+  color: #1bccd4;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.alert {
+  padding: 1px;
+}
+
+.user-notifyhead {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #d5eddb;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.notification-user {
+
+  font-size: 22px;
+  color: #0279d4;
+  font-weight: 600;
+  line-height: 17px;
+  position: relative;
+  top: -6px;
+
+}
+
+.notification-companytitle {
+  font-size: 14px;
+  padding-left: 9%;
+  color: #333;
+}
+
+.notification-time {
+  font-size: 14px;
+  padding-left: 12%;
+  font-weight: normal;
+  color: #95d900;
+  margin-bottom: 2%;
+}
+
+.notification-msg {
+  padding: 0px;
+  list-style: none;
+  line-height: 34px;
+  margin-left: 8%;
+  margin-bottom: 8px;
+  background: url("../../../../assets/images/notify-meg-icon.png");
+  background-repeat: no-repeat;
+  background-position: left 6px;
+  padding-left: 35px;
+  color: #333;
+}
+
+button.close {
+  /* margin: 0px !important; */
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 0;
+  background-color: #fff;
+  height: 25px !important;
+  width: 25px !important;
+  color: #464d80;
+  border-radius: 25px;
+  position: relative;
+  /* margin-right: 2%; */
+  right: 1%;
+  top: 2% !important;
+  z-index: 99;
+}

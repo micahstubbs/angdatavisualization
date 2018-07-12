@@ -1,4 +1,9 @@
-import {Component, OnDestroy, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, OnDestroy, OnInit, ViewEncapsulation,AfterViewInit,ViewChild} from '@angular/core';
+import {animate, style, transition, trigger} from '@angular/animations';
+import { HttpClient, HttpHeaderResponse, HttpHeaders, HttpParams } from '@angular/common/http';
+import { AppComponent } from '../../../app.component';
+
+import {GlobalApp} from '../../../shared/global';
 
 declare const AmCharts: any;
 
@@ -11,11 +16,32 @@ import '../../../../assets/charts/amchart/ammap.js';
 import '../../../../assets/charts/amchart/usaLow.js';
 
 
+
+
+
+
 @Component({
   selector: 'app-dotdataanalytics',
   templateUrl: './dotdataanalytics.component.html',
-  styleUrls: ['./dotdataanalytics.component.scss']
+  styleUrls: [
+      '../../../../assets/icon/icofont/css/icofont.scss'
+  ],
+  encapsulation: ViewEncapsulation.None,
+  animations: [
+  trigger('fadeInOutTranslate', [
+      transition(':enter', [
+          style({opacity: 0}),
+          animate('400ms ease-in-out', style({opacity: 1}))
+      ]),
+      transition(':leave', [
+          style({transform: 'translate(0)'}),
+          animate('400ms ease-in-out', style({opacity: 0}))
+      ])
+  ])
+]
 })
+
+
 export class DotdataanalyticsComponent implements OnInit, OnDestroy {
 
   public appSaleData1: any;
@@ -30,10 +56,81 @@ export class DotdataanalyticsComponent implements OnInit, OnDestroy {
   public seo1Data: any;
   public seo2Data: any;
   public seoOption: any;
+  public API_URL_metrics: any;
 
   public emailSentInterval: any;
 
-  constructor() { }
+    public  TopData: any;
+    public  BottomData: any;
+
+    public topUrl: any;
+    public  BottomUrl: any;
+
+    // line, area
+    public  autoScale = true;
+    public  luserid:any;
+    public lcompanyid:any;
+    public lvalue:any;
+    public lcomponentid:any;
+    public lchiid:any;
+
+  LeakageData: any;
+
+  constructor( private httpClient: HttpClient, private app: AppComponent) {
+
+
+      // console.log(this.lvalue.user_id);
+      // Metrics_Plugin_Path: any = '/metrics/inc/class.metrics.php'; // set component specific path, only for Metrics
+      // API_URL_metrics =  this.app.API_URL + this.Metrics_Plugin_Path;
+      //this.API_URL_metrics =  'https://hidden-savannah-28367.herokuapp.com/api/tictactoeimage/1'; // set component specific path, only for Metrics
+
+      this.API_URL_metrics =  'https://dev.rainmakerforce.com/wp-content/plugins/metrics/inc/class.metrics.php?action=metrics&recordaction=bottomfunbymonth1&user_id=510&cid=2&compnt_id=1';
+      // this.USERID: any = this.luserid;
+      // this.COMPANYID:any = this.lcompanyid;
+      // this.COMPONENTID:any = this.lcomponentid; // component id override
+
+
+      this.topUrl = this.API_URL_metrics + '?action=metrics&recordaction=topfunbymonth1';
+      this.BottomUrl = this.API_URL_metrics + '?action=metrics&recordaction=bottomfunbymonth1';
+
+
+      //private PipelineURL = this.API_URL_metrics + '?action=metrics&recordaction=totalpipeline';
+
+  }
+
+
+
+
+    setTopsmultiple(dataset_url) {
+
+        this.httpClient.get(dataset_url).subscribe(data => {
+             console.log(data);
+            this.TopData = data;
+        }, (error) => {
+            console.log('error list' , error);
+        });
+    }
+
+    setBotsmultiple(dataset_url) {
+
+        this.httpClient.get(dataset_url).subscribe(data => {
+            console.log(data);
+            this.BottomData = data;
+        }, (error) => {
+            console.log('error list' , error);
+        });
+    }
+
+  setLeakagesmultiple(dataset_url) {
+
+      this.httpClient.get(dataset_url).subscribe(data => {
+          // console.log(data);
+          this.LeakageData = data;
+      }, (error) => {
+          //console.log('error list' , error);
+      });
+  }
+
 
   ngOnInit() {
     setTimeout(() => {
@@ -815,148 +912,150 @@ export class DotdataanalyticsComponent implements OnInit, OnDestroy {
           }, {
             'id': 'US-AZ',
             'value': 5130632
-          }, {
-            'id': 'US-AR',
-            'value': 2673400
-          }, {
-            'id': 'US-CA',
-            'value': 33871648
-          }, {
-            'id': 'US-CO',
-            'value': 4301261
-          }, {
-            'id': 'US-CT',
-            'value': 3405565
-          }, {
-            'id': 'US-DE',
-            'value': 783600
-          }, {
-            'id': 'US-FL',
-            'value': 15982378
-          }, {
-            'id': 'US-GA',
-            'value': 8186453
-          }, {
-            'id': 'US-HI',
-            'value': 1211537
-          }, {
-            'id': 'US-ID',
-            'value': 1293953
-          }, {
-            'id': 'US-IL',
-            'value': 12419293
-          }, {
-            'id': 'US-IN',
-            'value': 6080485
-          }, {
-            'id': 'US-IA',
-            'value': 2926324
-          }, {
-            'id': 'US-KS',
-            'value': 2688418
-          }, {
-            'id': 'US-KY',
-            'value': 4041769
-          }, {
-            'id': 'US-LA',
-            'value': 4468976
-          }, {
-            'id': 'US-ME',
-            'value': 1274923
-          }, {
-            'id': 'US-MD',
-            'value': 5296486
-          }, {
-            'id': 'US-MA',
-            'value': 6349097
-          }, {
-            'id': 'US-MI',
-            'value': 9938444
-          }, {
-            'id': 'US-MN',
-            'value': 4919479
-          }, {
-            'id': 'US-MS',
-            'value': 2844658
-          }, {
-            'id': 'US-MO',
-            'value': 5595211
-          }, {
-            'id': 'US-MT',
-            'value': 902195
-          }, {
-            'id': 'US-NE',
-            'value': 1711263
-          }, {
-            'id': 'US-NV',
-            'value': 1998257
-          }, {
-            'id': 'US-NH',
-            'value': 1235786
-          }, {
-            'id': 'US-NJ',
-            'value': 8414350
-          }, {
-            'id': 'US-NM',
-            'value': 1819046
-          }, {
-            'id': 'US-NY',
-            'value': 18976457
-          }, {
-            'id': 'US-NC',
-            'value': 8049313
-          }, {
-            'id': 'US-ND',
-            'value': 642200
-          }, {
-            'id': 'US-OH',
-            'value': 11353140
-          }, {
-            'id': 'US-OK',
-            'value': 3450654
-          }, {
-            'id': 'US-OR',
-            'value': 3421399
-          }, {
-            'id': 'US-PA',
-            'value': 12281054
-          }, {
-            'id': 'US-RI',
-            'value': 1048319
-          }, {
-            'id': 'US-SC',
-            'value': 4012012
-          }, {
-            'id': 'US-SD',
-            'value': 754844
-          }, {
-            'id': 'US-TN',
-            'value': 5689283
-          }, {
-            'id': 'US-TX',
-            'value': 20851820
-          }, {
-            'id': 'US-UT',
-            'value': 2233169
-          }, {
-            'id': 'US-VT',
-            'value': 608827
-          }, {
-            'id': 'US-VA',
-            'value': 7078515
-          }, {
-            'id': 'US-WA',
-            'value': 5894121
-          }, {
-            'id': 'US-WV',
-            'value': 1808344
-          }, {
-            'id': 'US-WI',
-            'value': 5363675
-          }, {
-            'id': 'US-WY',
-            'value': 493782
-          } ]
+          }
+          //, {
+          //   'id': 'US-AR',
+          //   'value': 2673400
+          // }, {
+          //   'id': 'US-CA',
+          //   'value': 33871648
+          // }, {
+          //   'id': 'US-CO',
+          //   'value': 4301261
+          // }, {
+          //   'id': 'US-CT',
+          //   'value': 3405565
+          // }, {
+          //   'id': 'US-DE',
+          //   'value': 783600
+          // }, {
+          //   'id': 'US-FL',
+          //   'value': 15982378
+          // }, {
+          //   'id': 'US-GA',
+          //   'value': 8186453
+          // }, {
+          //   'id': 'US-HI',
+          //   'value': 1211537
+          // }, {
+          //   'id': 'US-ID',
+          //   'value': 1293953
+          // }, {
+          //   'id': 'US-IL',
+          //   'value': 12419293
+          // }, {
+          //   'id': 'US-IN',
+          //   'value': 6080485
+          // }, {
+          //   'id': 'US-IA',
+          //   'value': 2926324
+          // }, {
+          //   'id': 'US-KS',
+          //   'value': 2688418
+          // }, {
+          //   'id': 'US-KY',
+          //   'value': 4041769
+          // }, {
+          //   'id': 'US-LA',
+          //   'value': 4468976
+          // }, {
+          //   'id': 'US-ME',
+          //   'value': 1274923
+          // }, {
+          //   'id': 'US-MD',
+          //   'value': 5296486
+          // }, {
+          //   'id': 'US-MA',
+          //   'value': 6349097
+          // }, {
+          //   'id': 'US-MI',
+          //   'value': 9938444
+          // }, {
+          //   'id': 'US-MN',
+          //   'value': 4919479
+          // }, {
+          //   'id': 'US-MS',
+          //   'value': 2844658
+          // }, {
+          //   'id': 'US-MO',
+          //   'value': 5595211
+          // }, {
+          //   'id': 'US-MT',
+          //   'value': 902195
+          // }, {
+          //   'id': 'US-NE',
+          //   'value': 1711263
+          // }, {
+          //   'id': 'US-NV',
+          //   'value': 1998257
+          // }, {
+          //   'id': 'US-NH',
+          //   'value': 1235786
+          // }, {
+          //   'id': 'US-NJ',
+          //   'value': 8414350
+          // }, {
+          //   'id': 'US-NM',
+          //   'value': 1819046
+          // }, {
+          //   'id': 'US-NY',
+          //   'value': 18976457
+          // }, {
+          //   'id': 'US-NC',
+          //   'value': 8049313
+          // }, {
+          //   'id': 'US-ND',
+          //   'value': 642200
+          // }, {
+          //   'id': 'US-OH',
+          //   'value': 11353140
+          // }, {
+          //   'id': 'US-OK',
+          //   'value': 3450654
+          // }, {
+          //   'id': 'US-OR',
+          //   'value': 3421399
+          // }, {
+          //   'id': 'US-PA',
+          //   'value': 12281054
+          // }, {
+          //   'id': 'US-RI',
+          //   'value': 1048319
+          // }, {
+          //   'id': 'US-SC',
+          //   'value': 4012012
+          // }, {
+          //   'id': 'US-SD',
+          //   'value': 754844
+          // }, {
+          //   'id': 'US-TN',
+          //   'value': 5689283
+          // }, {
+          //   'id': 'US-TX',
+          //   'value': 20851820
+          // }, {
+          //   'id': 'US-UT',
+          //   'value': 2233169
+          // }, {
+          //   'id': 'US-VT',
+          //   'value': 608827
+          // }, {
+          //   'id': 'US-VA',
+          //   'value': 7078515
+          // }, {
+          //   'id': 'US-WA',
+          //   'value': 5894121
+          // }, {
+          //   'id': 'US-WV',
+          //   'value': 1808344
+          // }, {
+          //   'id': 'US-WI',
+          //   'value': 5363675
+          // }, {
+          //   'id': 'US-WY',
+          //   'value': 493782
+          // }
+          ]
         },
         'areasSettings': {
           'autoZoom': true
@@ -1004,6 +1103,23 @@ export class DotdataanalyticsComponent implements OnInit, OnDestroy {
       this.seoOption = seoBuildOption();
 
     }, 75);
+
+
+      this.httpClient.get(this.topUrl+'&user_id=' + this.luserid + '&cid=' + this.lcompanyid + '&compnt_id=' + this.lcomponentid).subscribe(data => {
+          this.TopData = data;
+            console.log(data);
+      }, (error) => {
+          console.log('error list' , error);
+      });
+
+      this.httpClient.get(this.BottomUrl+'&user_id=' + this.luserid + '&cid=' + this.lcompanyid + '&compnt_id=' + this.lcomponentid).subscribe(data => {
+          this.BottomData = data;
+           console.log(data);
+      }, (error) => {
+          // console.log('error list' , error);
+      });
+
+
   }
 
   ngOnDestroy() {
@@ -1186,3 +1302,5 @@ function seoBuildOption() {
     }
   };
 }
+
+
