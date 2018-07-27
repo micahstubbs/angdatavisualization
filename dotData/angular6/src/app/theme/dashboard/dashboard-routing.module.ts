@@ -11,7 +11,7 @@ const routes: Routes = [
     children: [
       {
         path: 'default',
-        loadChildren: './dotdataanalytics/dotdataanalytics.module#DotdataanalyticsModule'
+          loadChildren: './dotdataanalyticstree/dotdataanalyticstree.module#DotdataanalyticstreeModule'
       },
       {
         path: 'dotdataanalytics',

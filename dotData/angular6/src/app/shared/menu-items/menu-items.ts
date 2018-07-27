@@ -41,18 +41,18 @@ const MENUITEMS = [
         type: 'sub',
         icon: 'icon-bar-chart-alt',
         children: [
-          {
-            state: 'dotdataanalytics',
-            name: 'Analytics'
-          },{
-            state: 'dotdataanalyticstree',
-            name: 'Feature Engineering'
-          }
-            ,{
-                state: 'demo',
-                name: 'demo'
+            {
+                state: 'dotdataanalyticstree',
+                name: 'Feature Engineering'
             },
-
+            {
+                state: 'dotdataanalytics',
+                name: 'Analytics'
+            },
+            {
+                state: 'dotdataanalytics',
+                name: 'Forecastings'
+            },
         ]
       },
         {
