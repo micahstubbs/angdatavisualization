@@ -17,6 +17,7 @@ const routes: Routes = [
         path: 'dashboard',
         loadChildren: './theme/dashboard/dashboard.module#DashboardModule'
       },
+
     ]
   },
 

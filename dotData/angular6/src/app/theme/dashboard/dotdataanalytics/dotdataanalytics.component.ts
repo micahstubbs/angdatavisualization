@@ -84,7 +84,7 @@ export class DotdataanalyticsComponent implements OnInit, OnDestroy {
       // API_URL_metrics =  this.app.API_URL + this.Metrics_Plugin_Path;
       //this.API_URL_metrics =  'https://hidden-savannah-28367.herokuapp.com/api/tictactoeimage/1'; // set component specific path, only for Metrics
 
-      this.API_URL_metrics =  'https://dev.rainmakerforce.com/wp-content/plugins/metrics/inc/class.metrics.php?action=metrics&recordaction=bottomfunbymonth1&user_id=510&cid=2&compnt_id=1';
+      this.API_URL_metrics =  'https://wordpressAPIEndPoint/wp-content/plugins/metrics/inc/class.metrics.php?action=metrics&recordaction=bottomfunbymonth1&user_id=510&cid=2&compnt_id=1';
       // this.USERID: any = this.luserid;
       // this.COMPANYID:any = this.lcompanyid;
       // this.COMPONENTID:any = this.lcomponentid; // component id override

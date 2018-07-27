@@ -16,7 +16,11 @@ const routes: Routes = [
       {
         path: 'dotdataanalytics',
         loadChildren: './dotdataanalytics/dotdataanalytics.module#DotdataanalyticsModule'
-      }
+      },
+        {
+            path: 'dotdataanalyticstree',
+            loadChildren: './dotdataanalyticstree/dotdataanalyticstree.module#DotdataanalyticstreeModule'
+        },
     ]
   }
 ];

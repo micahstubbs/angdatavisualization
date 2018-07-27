@@ -35,47 +35,47 @@ var MENUITEMS = [
         label: 'UI Element',
         main: [
             {
-                state: 'basic',
-                name: 'Basic Components',
-                type: 'sub',
-                icon: 'icon-layout-grid2-alt',
-                children: [
-                    {
-                        state: 'alert',
-                        name: 'Alert'
-                    },
-                    {
-                        state: 'breadcrumb',
-                        name: 'Breadcrumbs'
-                    },
-                    {
-                        state: 'button',
-                        name: 'Button'
-                    },
-                    {
-                        state: 'accordion',
-                        name: 'Accordion'
-                    },
-                    {
-                        state: 'generic-class',
-                        name: 'Generic Class'
-                    },
-                    {
-                        state: 'tabs',
-                        name: 'Tabs'
-                    },
-                    {
-                        state: 'label-badge',
-                        name: 'Label Badge'
-                    },
-                    {
-                        state: 'typography',
-                        name: 'Typography'
-                    },
-                    {
-                        state: 'other',
-                        name: 'Other'
-                    },
+                        state: 'basic',
+                        name: 'Basic Components',
+                        type: 'sub',
+                        icon: 'icon-layout-grid2-alt',
+                        children: [
+                            {
+                                state: 'alert',
+                                name: 'Alert'
+                            },
+                            {
+                                state: 'breadcrumb',
+                                name: 'Breadcrumbs'
+                            },
+                            {
+                                state: 'button',
+                                name: 'Button'
+                            },
+                            {
+                                state: 'accordion',
+                                name: 'Accordion'
+                            },
+                            {
+                                state: 'generic-class',
+                                name: 'Generic Class'
+                            },
+                            {
+                                state: 'tabs',
+                                name: 'Tabs'
+                            },
+                            {
+                                state: 'label-badge',
+                                name: 'Label Badge'
+                            },
+                            {
+                                state: 'typography',
+                                name: 'Typography'
+                            },
+                            {
+                                state: 'other',
+                                name: 'Other'
+                            },
                 ]
             },
             {

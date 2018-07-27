@@ -32,7 +32,7 @@ export interface Menu {
 
 const MENUITEMS = [
   {
-    label: 'dotData Analytics',
+    label: '',
     main: [
       {
         state: 'dashboard',
@@ -42,11 +42,36 @@ const MENUITEMS = [
         icon: 'icon-bar-chart-alt',
         children: [
           {
-            state: 'analytics',
+            state: 'dotdataanalytics',
             name: 'Analytics'
+          },{
+            state: 'dotdataanalyticstree',
+            name: 'Feature Engineering'
           }
+            ,{
+                state: 'demo',
+                name: 'demo'
+            },
+
         ]
-      }
+      },
+        {
+            state: 'basic',
+            name: 'Basic Components',
+            type: 'sub',
+            icon: 'icon-layout-grid2-alt',
+            children: [
+                {
+                    state: 'alert',
+                    name: 'Alert'
+                },
+                {
+                    state: 'other',
+                    name: 'Other'
+                },
+            ]
+        },
+
     ],
   },
 ];

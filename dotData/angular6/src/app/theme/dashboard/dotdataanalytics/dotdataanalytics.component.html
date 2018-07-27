@@ -109,43 +109,7 @@
         <!--  data visualizaton start -->
         <div class="col-xl-8 col-md-12">
             <app-card [title]="'Trained Models'">
-
-                    <app-card [blockClass]="'table-border-style'" [classHeader]="true">
-                        <div class="chart-head">Top Model Sales   <i class="fa fa-info-circle" aria-hidden="true"  ngbTooltip="Sum of sales over time"></i> <select class="chart_select_top selector"  (change)="setTopsmultiple($event.target.value)">
-
-                            <option value="{{ API_URL_metrics }}?action=metrics&recordaction=topfunbymonth1&user_id={{ this.luserid }}&cid={{ this.lcompanyid }}&compnt_id={{ this.lcomponentid }}">
-                                By Month
-                            </option>
-                            <option value="{{ API_URL_metrics }}?action=metrics&recordaction=topfunbyquarter1&user_id={{ this.luserid }}&cid={{ this.lcompanyid }}&compnt_id={{ this.lcomponentid }}">
-                                By Quarter
-                            </option>
-                            <option value="{{ API_URL_metrics }}?action=metrics&recordaction=topfunbyyear1&user_id={{ this.luserid }}&cid={{ this.lcompanyid }}&compnt_id={{ this.lcomponentid }}">
-                                By Year
-                            </option>
-                            <option value="{{ API_URL_metrics }}?action=metrics&recordaction=topfunbyweek1&user_id={{ this.luserid }}&cid={{ this.lcompanyid }}&compnt_id={{ this.lcomponentid }}">
-                                By Week
-                            </option>
-                        </select></div>
-
-
-                        <dx-chart id="chart" [dataSource]="TopData" palette="ocean">
-                            <dxo-common-series-settings argumentField="month" type="bar" valueField="dayval"></dxo-common-series-settings>
-                            <dxo-series-template nameField="opstitle"> </dxo-series-template>
-
-                            <dxi-value-axis title="Number of Days">
-                                <dxo-label [customizeText]=""></dxo-label>
-                            </dxi-value-axis>
-                            <dxo-tooltip
-                                    [enabled]="true"
-                                    location="edge"
-                                    [customizeTooltip]="customizeTooltip1">
-                            </dxo-tooltip>
-                            <dxo-legend [visible]="false"  verticalAlignment="bottom"  horizontalAlignment="center"></dxo-legend>
-                            <!--<dxo-export [enabled]="true"></dxo-export> -->
-                        </dx-chart>
-                    </app-card>
-
-
+                <div id="sales-analytics" [style.height]="'335px'"></div>
             </app-card>
         </div>
 
@@ -260,7 +224,45 @@
                     <!--<dxo-export [enabled]="true"></dxo-export> -->
                 </dx-chart>
             </app-card>
+
+
+            <app-card [blockClass]="'table-border-style'" [classHeader]="true">
+                <div class="chart-head">Top Model Sales   <i class="fa fa-info-circle" aria-hidden="true"  ngbTooltip="Sum of sales over time"></i> <select class="chart_select_top selector"  (change)="setTopsmultiple($event.target.value)">
+
+                    <option value="{{ API_URL_metrics }}?action=metrics&recordaction=topfunbymonth1&user_id={{ this.luserid }}&cid={{ this.lcompanyid }}&compnt_id={{ this.lcomponentid }}">
+                        By Month
+                    </option>
+                    <option value="{{ API_URL_metrics }}?action=metrics&recordaction=topfunbyquarter1&user_id={{ this.luserid }}&cid={{ this.lcompanyid }}&compnt_id={{ this.lcomponentid }}">
+                        By Quarter
+                    </option>
+                    <option value="{{ API_URL_metrics }}?action=metrics&recordaction=topfunbyyear1&user_id={{ this.luserid }}&cid={{ this.lcompanyid }}&compnt_id={{ this.lcomponentid }}">
+                        By Year
+                    </option>
+                    <option value="{{ API_URL_metrics }}?action=metrics&recordaction=topfunbyweek1&user_id={{ this.luserid }}&cid={{ this.lcompanyid }}&compnt_id={{ this.lcomponentid }}">
+                        By Week
+                    </option>
+                </select></div>
+
+
+                <dx-chart id="chart" [dataSource]="TopData" palette="ocean">
+                    <dxo-common-series-settings argumentField="month" type="bar" valueField="dayval"></dxo-common-series-settings>
+                    <dxo-series-template nameField="opstitle"> </dxo-series-template>
+
+                    <dxi-value-axis title="Number of Days">
+                        <dxo-label [customizeText]=""></dxo-label>
+                    </dxi-value-axis>
+                    <dxo-tooltip
+                            [enabled]="true"
+                            location="edge"
+                            [customizeTooltip]="customizeTooltip1">
+                    </dxo-tooltip>
+                    <dxo-legend [visible]="false"  verticalAlignment="bottom"  horizontalAlignment="center"></dxo-legend>
+                    <!--<dxo-export [enabled]="true"></dxo-export> -->
+                </dx-chart>
+            </app-card>
         </div>
+
+
 
 
 

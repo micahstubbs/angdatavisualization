@@ -9,22 +9,6 @@ const routes: Routes = [
       status: false
     },
     children: [
-        // {
-        //     path: 'companies',
-        //     loadChildren: './companies/companies.module#CompaniesModule'
-        // },
-        // {
-        //     path: 'contacts',
-        //     loadChildren: './contacts/contacts.module#contactsModule'
-        // },
-        // {
-        //     path: 'MQLs',
-        //     loadChildren: './MQLs/MQLs.module#MQLsModule'
-        // },
-        // {
-        //     path: 'SQLs',
-        //     loadChildren: './SQLs/SQLs.module#SQLsModule'
-        // },
         {
         path: 'google',
         loadChildren: './google-chart/google-chart.module#GoogleChartModule'
@@ -40,12 +24,11 @@ const routes: Routes = [
       {
         path: 'c3-js',
         loadChildren: './c3-js/c3-js.module#C3JsModule'
+      },
+      {
+          path: 'c3-js2',
+          loadChildren: './c3-js2/c3-js.module#C3JsModule'
       }
-      // ,
-      // {
-      //     path: 'c3-js2',
-      //     loadChildren: './c3-js2/c3-js.module#C3JsModule'
-      // }
     ]
   }
 ];

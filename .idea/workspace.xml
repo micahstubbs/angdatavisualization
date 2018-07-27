@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5c5f7ec5-8d43-4a97-8f23-0c8c56cc0b04" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/angdatavisualization.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/bootstrap.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/chartTypes.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/data.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/data/turbine.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree-routing.module.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.component.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.component.spec.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.module.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/graph/graph.component.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/graph/graph.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/graph/graph.module.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/graph/index.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/graph/mouse-wheel.directive.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/index.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/libs.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/mouse-wheel.directive.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/karma.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/ng-package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/ng-package.prod.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/lib/change-filter.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/lib/graph/graph.component.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/lib/graph/graph.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/lib/graph/graph.module.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/lib/graph/index.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/lib/graph/mouse-wheel.directive.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/lib/ngx-echarts.directive.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/lib/ngx-echarts.module.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/lib/ngx-echarts.service.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/lib/utils/color-sets.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/lib/utils/id.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/lib/utils/index.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/lib/utils/throttle.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/public_api.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/test.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/tsconfig.lib.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/tsconfig.spec.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/tslint.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-graph.module.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/turbine.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/utils/color-sets.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/utils/id.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/utils/index.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/utils/throttle.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/utils/color-sets.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/utils/id.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/utils/index.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/utils/throttle.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/declarations.d.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/graph/graph.component.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/graph/graph.component.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/graph/graph.module.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/graph/index.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/graph/mouse-wheel.directive.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/ngx-graph.module.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/utils/color-sets.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/utils/id.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/utils/index.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dotData/angular6/src/utils/throttle.ts" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dotData/angular6/package-lock.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dotData/angular6/package.json" afterPath="$PROJECT_DIR$/dotData/angular6/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dotData/angular6/src/app/app-routing.module.ts" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/app-routing.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dotData/angular6/src/app/shared/menu-items/menu-items.js" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/shared/menu-items/menu-items.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dotData/angular6/src/app/shared/menu-items/menu-items.ts" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/shared/menu-items/menu-items.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dotData/angular6/src/app/theme/chart/chart-routing.module.ts" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/chart/chart-routing.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dashboard-routing.module.ts" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dashboard-routing.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalytics/dotdataanalytics.component.html" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalytics/dotdataanalytics.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalytics/dotdataanalytics.component.ts" afterPath="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalytics/dotdataanalytics.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dotData/angular6/src/index.html" afterPath="$PROJECT_DIR$/dotData/angular6/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dotData/angular6/src/tsconfig.app.json" afterPath="$PROJECT_DIR$/dotData/angular6/src/tsconfig.app.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dotData/angular6/src/tsconfig.spec.json" afterPath="$PROJECT_DIR$/dotData/angular6/src/tsconfig.spec.json" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="dotdataanalyticstree.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+              <folding>
+                <element signature="e#3#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dotData/angular6/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2458">
+              <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.-bk" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dotData/angular6/package.-bk">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-792">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dotdataanalyticstree-routing.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree-routing.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dotdataanalyticstree.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="45" column="29" lean-forward="false" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#69#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.module.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/default/default.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="65" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dotdataanalyticstree.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="53">
+              <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="65" selection-end-column="22" />
+              <folding>
+                <marker date="1532731667000" expanded="false" signature="3114:3132" ph="..." />
+                <marker date="1532731667000" expanded="false" signature="3547:3562" ph="..." />
+                <marker date="1532731667000" expanded="false" signature="3876:3894" ph="..." />
+                <marker date="1532731667000" expanded="false" signature="5172:5190" ph="..." />
+                <marker date="1532731667000" expanded="false" signature="6501:6516" ph="..." />
+                <marker date="1532731667000" expanded="false" signature="6771:6789" ph="..." />
+                <marker date="1532731667000" expanded="false" signature="7103:7118" ph="..." />
+                <marker date="1532731667000" expanded="false" signature="7362:7380" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tsconfig.app.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dotData/angular6/src/tsconfig.app.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/default/default.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="22" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Analytics</find>
+      <find>dashboard</find>
+      <find>chart</find>
+      <find>Dashboard</find>
+      <find>analytics</find>
+      <find>DotData Analytics</find>
+      <find>DotdataanalyticstreeRoutingModule</find>
+      <find>graphp</find>
+      <find>seo1Data</find>
+      <find>replace</find>
+      <find>replac</find>
+      <find>util</find>
+      <find>graph</find>
+      <find>bindWindowResizeEvent</find>
+      <find>bind</find>
+      <find>AfterViewInit</find>
+      <find>data</find>
+      <find>appModule</find>
+      <find>app</find>
+      <find>.json</find>
+      <find>IS_PRODUCTION</find>
+      <find>Demo</find>
+      <find>app.</find>
+      <find>d</find>
+      <find>demo</find>
+      <find>dashboard/demo</find>
+      <find>App</find>
+      <find>CommonModule</find>
+      <find>NGX</find>
+      <find>DATA</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Dotdataanalyticstree</replace>
+      <replace>demo.</replace>
+      <replace>dotdataanalyticstree</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/dotData/angular6/src/app</dir>
+      <dir>$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/graph</dir>
+      <dir>$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts</dir>
+      <dir>$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree</dir>
+      <dir>$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard</dir>
+      <dir>$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo</dir>
+      <dir>$PROJECT_DIR$/dotData/angular6/src</dir>
+      <dir>$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/default</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dashboard.module.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/default/default.module.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/default/default.component.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalytics/dotdataanalytics.module.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/index.html" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalytics/dotdataanalytics.component.ts" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_6.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalytics/dotdataanalytics.component.html" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalytics-routing.module.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalytics.component.spec.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalytics.component.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/graph/graph.component.html" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalytics.module.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.component.spec.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/graph/index.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/chart/chart-routing.module.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/shared/menu-items/menu-items.js" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/graph.module.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/graph-routing.module.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/graph/graph.component.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/graph/graph-routing.module.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/graph/dotdataanalyticstree.module.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/graph/graph.module.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.component.bk-ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/lib/ngx-echarts.service.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/lib/change-filter.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/shared/menu-items/menu-items.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/bootstrap.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/data.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/demo.module.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/demo.component.scss" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/tsconfig.spec.json" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/declarations.d.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/demo.component.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/libs.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.component.scss" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dashboard-routing.module.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree-routing.module.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/bootstrap.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/tsconfig.app.json" />
+        <option value="$PROJECT_DIR$/dotData/angular6/package.json" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.module.ts" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.component.html" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.component.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/dotData/angular6/node_modules" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="28" />
+    <option name="y" value="23" />
+    <option name="width" value="1385" />
+    <option name="height" value="812" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="angdatavisualization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angdatavisualization" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="angdatavisualization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angdatavisualization" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dotData" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="angdatavisualization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angdatavisualization" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dotData" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="angular6" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="angdatavisualization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angdatavisualization" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dotData" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="angular6" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="angdatavisualization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angdatavisualization" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dotData" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="angular6" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="angdatavisualization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angdatavisualization" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dotData" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="angular6" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="theme" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="angdatavisualization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angdatavisualization" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dotData" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="angular6" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="theme" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="angdatavisualization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="angdatavisualization" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dotData" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="angular6" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="theme" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dashboard" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dotdataanalyticstree" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/dotData/angular6/node_modules/tslint" />
+    <property name="SearchEverywhereHistoryKey" value="ngx-graph.module.ts&#9;FILE&#9;file:///www/angdatavisualization/dotData/angular6/src/ngx-graph.module.ts" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dotData/angular6" />
+      <recent name="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree" />
+      <recent name="$PROJECT_DIR$/dotData/angular6/src" />
+      <recent name="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo" />
+      <recent name="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo" />
+      <recent name="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/ngx-echarts/src/lib" />
+      <recent name="$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c5f7ec5-8d43-4a97-8f23-0c8c56cc0b04" name="Default" comment="" />
+      <created>1530781920046</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1530781920046</updated>
+      <workItem from="1530781921646" duration="1211000" />
+      <workItem from="1530784659465" duration="390000" />
+      <workItem from="1530817653454" duration="1376000" />
+      <workItem from="1530998488389" duration="739000" />
+      <workItem from="1531000355962" duration="598000" />
+      <workItem from="1531002205814" duration="598000" />
+      <workItem from="1531004021184" duration="598000" />
+      <workItem from="1531022108872" duration="598000" />
+      <workItem from="1531023918671" duration="598000" />
+      <workItem from="1531025769304" duration="598000" />
+      <workItem from="1531031115671" duration="567000" />
+      <workItem from="1531078743678" duration="598000" />
+      <workItem from="1531177927984" duration="599000" />
+      <workItem from="1531180199433" duration="599000" />
+      <workItem from="1531185212511" duration="599000" />
+      <workItem from="1531187136555" duration="598000" />
+      <workItem from="1531189589374" duration="589000" />
+      <workItem from="1531191417526" duration="42000" />
+      <workItem from="1531196602225" duration="599000" />
+      <workItem from="1531198413869" duration="547000" />
+      <workItem from="1531247570104" duration="1641000" />
+      <workItem from="1531249710754" duration="842000" />
+      <workItem from="1531365198478" duration="1634000" />
+      <workItem from="1531367082984" duration="1125000" />
+      <workItem from="1531383856726" duration="1747000" />
+      <workItem from="1531385677118" duration="1629000" />
+      <workItem from="1531387490428" duration="1782000" />
+      <workItem from="1531389302779" duration="1752000" />
+      <workItem from="1531391114404" duration="642000" />
+      <workItem from="1531413719584" duration="539000" />
+      <workItem from="1531516703855" duration="8000" />
+      <workItem from="1531523465792" duration="543000" />
+      <workItem from="1531642171252" duration="21000" />
+      <workItem from="1531717736111" duration="1022000" />
+      <workItem from="1531781408247" duration="1634000" />
+      <workItem from="1531783389014" duration="553000" />
+      <workItem from="1531785596907" duration="510000" />
+      <workItem from="1531790442290" duration="170000" />
+      <workItem from="1531867213259" duration="579000" />
+      <workItem from="1532019425306" duration="841000" />
+      <workItem from="1532024720019" duration="493000" />
+      <workItem from="1532036930727" duration="821000" />
+      <workItem from="1532136327701" duration="518000" />
+      <workItem from="1532213612974" duration="310000" />
+      <workItem from="1532557951801" duration="608000" />
+      <workItem from="1532559946322" duration="519000" />
+      <workItem from="1532563008681" duration="568000" />
+      <workItem from="1532565167320" duration="591000" />
+      <workItem from="1532567543545" duration="1427000" />
+      <workItem from="1532569355607" duration="518000" />
+      <workItem from="1532631381019" duration="1146000" />
+      <workItem from="1532633390773" duration="797000" />
+      <workItem from="1532637665501" duration="1668000" />
+      <workItem from="1532640027157" duration="1279000" />
+      <workItem from="1532642699768" duration="1640000" />
+      <workItem from="1532644640801" duration="1709000" />
+      <workItem from="1532646459214" duration="1790000" />
+      <workItem from="1532648415591" duration="1128000" />
+      <workItem from="1532649558802" duration="15000" />
+      <workItem from="1532649593306" duration="1773000" />
+      <workItem from="1532653046384" duration="1429000" />
+      <workItem from="1532673547585" duration="825000" />
+      <workItem from="1532675416312" duration="598000" />
+      <workItem from="1532677350809" duration="1789000" />
+      <workItem from="1532679165696" duration="1788000" />
+      <workItem from="1532681035728" duration="1738000" />
+      <workItem from="1532682874133" duration="1790000" />
+      <workItem from="1532684685223" duration="1775000" />
+      <workItem from="1532686513211" duration="1799000" />
+      <workItem from="1532688432997" duration="907000" />
+      <workItem from="1532726956865" duration="1736000" />
+      <workItem from="1532728764917" duration="1857000" />
+      <workItem from="1532730685696" duration="1070000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="70274000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="28" y="23" width="1385" height="812" extended-state="0" />
+    <layout>
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43931496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2925072" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2925072" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43931496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/shared/card/card.component.js" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/shared/card/card-animation.js" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/shared/card/card-toggle.directive.js" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/shared/accordion/accordionlink.directive.js" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/shared/accordion/accordionanchor.directive.js" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/shared/accordion/accordion.directive.js" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/shared/accordion/index.js" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/shared/fullscreen/toggle-fullscreen.directive.js" />
+        <option value="$PROJECT_DIR$/dotData/angular6/src/app/shared/menu-items/menu-items.js" />
+        <option value="$PROJECT_DIR$/dotData/angular6/node_modules/karma/config.tpl.js" />
+        <option value="$PROJECT_DIR$/dotData/angular6/node_modules/@swimlane/ngx-datatable/test/jasmine-matchers.d.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/app.component.ts" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/graph/index.ts" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/shared/menu-items/menu-items.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="27" lean-forward="false" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/app.component.html" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/ngx-graph.module.ts" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/utils/index.ts" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/utils/color-sets.ts" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/utils/id.ts" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/utils/throttle.ts" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/release/src/graph/graph.module.d.ts" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/data/turbine.json" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/turbine.json" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/typings.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/ngx-echarts/src/lib/ngx-echarts.service.ts" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/tsconfig.spec.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/declarations.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/bootstrap.ts" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/chartTypes.ts" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/data.ts" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/index.ejs" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/libs.ts" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/demo.module.ts" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/demo.component.ts" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/demo.component.html" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/demo/demo.component.scss" />
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4020">
+          <caret line="268" column="0" lean-forward="false" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/libs.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalytics/dotdataanalytics.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dashboard.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dashboard-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/utils/color-sets.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/utils/id.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/utils/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/utils/throttle.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/graph/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/bootstrap.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#75#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/package.json-bk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2458">
+          <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/package.-bk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-792">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding>
+            <element signature="e#3#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/tsconfig.app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/default/default.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="22" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/default/default.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="65" selection-end-column="22" />
+          <folding>
+            <marker date="1532731667000" expanded="false" signature="3114:3132" ph="..." />
+            <marker date="1532731667000" expanded="false" signature="3547:3562" ph="..." />
+            <marker date="1532731667000" expanded="false" signature="3876:3894" ph="..." />
+            <marker date="1532731667000" expanded="false" signature="5172:5190" ph="..." />
+            <marker date="1532731667000" expanded="false" signature="6501:6516" ph="..." />
+            <marker date="1532731667000" expanded="false" signature="6771:6789" ph="..." />
+            <marker date="1532731667000" expanded="false" signature="7103:7118" ph="..." />
+            <marker date="1532731667000" expanded="false" signature="7362:7380" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotData/angular6/src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="45" column="29" lean-forward="false" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
