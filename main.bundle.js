@@ -6,7 +6,13 @@ webpackJsonp(["main"],{
 var map = {
 	"./dotdataanalytics/dotdataanalytics.module": [
 		"./src/app/theme/dashboard/dotdataanalytics/dotdataanalytics.module.ts",
-		"dotdataanalytics.module"
+		"dotdataanalytics.module",
+		"common"
+	],
+	"./dotdataanalyticstree/dotdataanalyticstree.module": [
+		"./src/app/theme/dashboard/dotdataanalyticstree/dotdataanalyticstree.module.ts",
+		"common",
+		"dotdataanalyticstree.module"
 	],
 	"./theme/dashboard/dashboard.module": [
 		"./src/app/theme/dashboard/dashboard.module.ts",
@@ -17,7 +23,7 @@ function webpackAsyncContext(req) {
 	var ids = map[req];
 	if(!ids)
 		return Promise.reject(new Error("Cannot find module '" + req + "'."));
-	return __webpack_require__.e(ids[1]).then(function() {
+	return Promise.all(ids.slice(1).map(__webpack_require__.e)).then(function() {
 		return __webpack_require__(ids[0]);
 	});
 };
@@ -1175,7 +1181,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var MENUITEMS = [
     {
-        label: 'dotData Analytics',
+        label: '',
         main: [
             {
                 state: 'dashboard',
@@ -1185,11 +1191,34 @@ var MENUITEMS = [
                 icon: 'icon-bar-chart-alt',
                 children: [
                     {
-                        state: 'analytics',
+                        state: 'dotdataanalytics',
                         name: 'Analytics'
-                    }
+                    }, {
+                        state: 'dotdataanalyticstree',
+                        name: 'Feature Engineering'
+                    },
+                    {
+                        state: 'demo',
+                        name: 'demo'
+                    },
                 ]
-            }
+            },
+            {
+                state: 'basic',
+                name: 'Basic Components',
+                type: 'sub',
+                icon: 'icon-layout-grid2-alt',
+                children: [
+                    {
+                        state: 'alert',
+                        name: 'Alert'
+                    },
+                    {
+                        state: 'other',
+                        name: 'Other'
+                    },
+                ]
+            },
         ],
     },
 ];
