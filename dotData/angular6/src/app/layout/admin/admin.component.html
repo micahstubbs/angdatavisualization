@@ -105,33 +105,38 @@
                 <span>Emiliano Gaytan</span>
                 <i class="icon-angle-down"></i>
               </a>
-              <!--<ul [@notificationBottom]="profileNotification" class="show-notification profile-notification">-->
-                <!--<li>-->
-                  <!--<a href="javascript:">-->
-                    <!--<i class="icon-settings"></i> Settings-->
-                  <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                  <!--<a [routerLink]="['/user/profile/']">-->
-                    <!--<i class="icon-user"></i> Profile-->
-                  <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                  <!--<a href="javascript:">-->
-                    <!--<i class="icon-email"></i> My Messages-->
-                  <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                  <!--<a [routerLink]="['/auth/lock-screen/']" target="_blank">-->
-                    <!--<i class="icon-lock"></i> Lock Screen-->
-                  <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                  <!--<a [routerLink]="['/auth/login/simple/']" target="_blank">-->
-                    <!--<i class="icon-layout-sidebar-left"></i> Logout-->
-                  <!--</a>-->
-                <!--</li>-->
-              <!--</ul>-->
+              <ul [@notificationBottom]="profileNotification" class="show-notification profile-notification">
+                <li>
+                  <a href="javascript:">
+                    <i class="icon-settings"></i> Manage Users
+                  </a>
+                </li>
+                <li>
+                  <a [routerLink]="['/user/profile/']">
+                    <i class="icon-user"></i> Manage Groups
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:">
+                    <i class="icon-settings"></i> Edit Settings
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:">
+                    <i class="icon-settings"></i> Manage Users
+                  </a>
+                </li>
+                <li>
+                  <a [routerLink]="['/auth/lock-screen/']" target="_blank">
+                    <i class="icon-lock"></i> Lock Screen
+                  </a>
+                </li>
+                <li>
+                  <a [routerLink]="['/auth/login/simple/']" target="_blank">
+                    <i class="icon-layout-sidebar-left"></i> Logout
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
           <!-- Sidebar chat start -->
