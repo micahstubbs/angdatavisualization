@@ -25,7 +25,7 @@ var routes = [
         children: [
             {
                 path: 'default',
-                loadChildren: './dotdataanalytics/dotdataanalytics.module#DotdataanalyticsModule'
+                loadChildren: './dotdataanalyticstree/dotdataanalyticstree.module#DotdataanalyticstreeModule'
             },
             {
                 path: 'dotdataanalytics',
